@@ -124,8 +124,8 @@ h2 {
     padding: 20px;
     color: white;
     border-radius: 15px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-bottom: 300px;
+    /* margin-top: 300px; */
 }
 
 .book-btn:hover {
@@ -206,14 +206,14 @@ h2 {
 
 .hero-content {
   padding-left: 8em;
-  padding-right: 8em;
 }
 
 .hero-content p {
     font-size: 1.5rem;
     color: white;
-    padding: 0rem 8rem 4rem 0rem;
+    /* padding: 0rem 8rem 4rem 0rem; */
     font-weight: 400;
+    margin-bottom: 50px;
     /* text-align: left; */
 }
 
@@ -243,11 +243,11 @@ h2 {
 
     .hero-content p {
         font-size: 1rem;
-        padding: 40px;
+        /* padding: 40px; */
     }
 
     .hero-content {
-      padding: 40px;
+      /* padding: 40px; */
     }
 
     .logo {
@@ -307,7 +307,7 @@ h2 {
 
     .hero-content p {
         font-size: 1.5rem;
-        padding: 20px;
+        /* padding: 20px; */
     }
 
     .hero-content {
@@ -955,7 +955,7 @@ textarea {
 
 #ways-to-stay-section {
   margin: 150px 50px 200px 50px;
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .ways-to-stay-title {
@@ -965,7 +965,7 @@ textarea {
 
 .card-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -1028,9 +1028,9 @@ textarea {
     }
   }
 
-  @media(max-width: 320px) {
+  @media(max-width: 350px) {
     .card {
-        margin-bottom: 400px;
+        margin-bottom: 350px;
     }
 
     .card-info {
