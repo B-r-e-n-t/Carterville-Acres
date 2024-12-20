@@ -30,3 +30,60 @@ menuItems.forEach(item => {
     }
     })
 })
+
+
+
+
+ // JavaScript to handle modal visibility
+ const modal = document.getElementById("popupForm");
+ const buttons = document.querySelectorAll(".book-btn");
+ const closeBtn = document.querySelector(".close");
+ 
+
+// Add event listeners to all buttons with the "book-btn" class
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        modal.style.display = "block";
+    });
+});
+
+// Close modal on close button click
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Close modal if the user clicks outside of the modal content
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+
+
+
+// JavaScript to handle modal visibility
+
+const buttons1 = document.querySelectorAll(".sites-link");
+
+
+
+// Add event listeners to all buttons with the "book-btn" class
+buttons1.forEach((button) => {
+   button.addEventListener("click", () => {
+       modal.style.display = "block";
+   });
+});
+
+// Close modal on close button click
+closeBtn.addEventListener("click", () => {
+   modal.style.display = "none";
+});
+
+// Close modal if the user clicks outside of the modal content
+window.addEventListener("click", (event) => {
+   if (event.target === modal) {
+       modal.style.display = "none";
+   }
+});
+
