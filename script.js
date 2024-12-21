@@ -87,3 +87,56 @@ window.addEventListener("click", (event) => {
    }
 });
 
+
+
+
+
+
+
+// const modal = document.getElementById("popupForm");
+const openModalBtn = document.querySelector(".book-btn"); // Replace with your trigger button
+const closeModalBtn = modal.querySelector(".close");
+
+// Open Modal
+openModalBtn.addEventListener("click", () => {
+    modal.classList.add("show");
+});
+
+// Close Modal
+closeModalBtn.addEventListener("click", () => {
+    modal.classList.remove("show");
+});
+
+// Optional: Close modal when clicking outside the content
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("show");
+    }
+});
+
+
+
+
+
+
+
+const openModalBtn1 = document.querySelector(".sites-link"); // Replace with your trigger button
+// const closeModalBtn = modal.querySelector(".close");
+
+// Open Modal
+openModalBtn1.addEventListener("click", () => {
+    modal.classList.add("show");
+});
+
+// Close Modal
+closeModalBtn.addEventListener("click", () => {
+    modal.classList.remove("show");
+});
+
+// Optional: Close modal when clicking outside the content
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("show");
+    }
+});
+
