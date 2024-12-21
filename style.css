@@ -92,9 +92,17 @@ h2 {
     padding-right: 5rem;
 }
 
+#primary-navigation li:hover a {
+  color: white; /* Text color changes to white */
+}
+
 .primary-navigation a {
   color: black;
 }
+
+/* .primary-navigation a:hover {
+  color: white;
+} */
 
 .primary-header {
     align-items: center;
@@ -138,7 +146,6 @@ h2 {
     padding: 1em;
     border: 15px;
     cursor: pointer;
-    color: white;
 }
 
 .hero-content {
@@ -385,7 +392,7 @@ textarea {
     background-color: #f1f8f8;
     color: black;
     align-items: center;
-    padding: 50px;
+    padding: 50px 50px 25px 50px;
     line-height: 2;
 }
 
