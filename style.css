@@ -470,7 +470,7 @@ textarea {
 
   .card-info {
     position: absolute;
-    top: 200px;
+    top: 250px;
     width: 80%;
     justify-content: center;
     background-color: white;
@@ -505,7 +505,7 @@ textarea {
     }
 
     .card-info {
-      top: 150px;
+      top: 200px;
     }
 
     #ways-to-stay-section {
