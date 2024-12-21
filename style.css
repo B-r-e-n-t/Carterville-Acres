@@ -379,22 +379,15 @@ textarea {
 /* +++++++++++++++++  Footer  +++++++++++++++++ */
 
 .footer-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     background-color: #f1f8f8;
     color: black;
     align-items: center;
     padding: 50px;
     line-height: 2;
-    margin-top: 50px;
 }
 
 .footer-info-container {
-  display: flex;
   gap: 100px;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 
@@ -406,6 +399,11 @@ textarea {
 .footer-info-section a {
     text-decoration: none;
     color: black;
+    font-size: 12px;
+}
+
+.footer-info-section p {
+  margin: 0;
 }
 
 .footer-info-section {
@@ -512,7 +510,7 @@ textarea {
 
     #ways-to-stay-section {
       margin: 15px;
-      padding: 50px;
+      padding: 0px;
     }
 
     .card-btn {
