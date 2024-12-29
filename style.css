@@ -292,6 +292,7 @@ strong {
 
 .about-sections-content p{
   margin-bottom: 50px;
+  
 }
 
 .about-sections img {
@@ -315,6 +316,21 @@ strong {
         width: 450px;
         margin-right: 0;
     }
+}
+
+@media(max-width: 300px) {
+  p {
+      font-size: 1rem;
+  }
+
+  .about-sections img {
+      width: 450px;
+      margin: 15px;
+  }
+
+  .about-sections {
+    margin: 15px;
+  }
 }
 
 
@@ -512,6 +528,10 @@ textarea {
   @media(max-width: 600px) {
     .card {
         margin-bottom: 300px;
+    }
+
+    .card1 {
+      margin-bottom: 320px;
     }
 
     .card-info {
