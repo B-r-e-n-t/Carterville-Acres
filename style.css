@@ -570,6 +570,10 @@ textarea {
     text-decoration: underline;
   }
 
+  .sites-link:hover {
+    color:#000
+  }
+
 
 /* +++++++++++++++++ pop up ++++++++++++++++++ */
 
