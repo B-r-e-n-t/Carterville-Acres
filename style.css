@@ -249,6 +249,7 @@ h2 {
 
     .mobile-nav-toggle[aria-expanded="true"] {
         background-image: url(images/close.png);
+        top: 4rem;
     }
 
     .hero-nav h1 {
