@@ -29,6 +29,21 @@ h2 {
   color: #333;
 }
 
+.code-banner {
+  background-color: #dfa028;
+  display: flex;
+  justify-content: center;
+}
+
+.code-banner-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.code-banner-info h1 {
+  font-size: 50px;
+}
+
 .hero-content {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
               url(images/cartervillepond.jpg);
@@ -119,7 +134,7 @@ h2 {
     cursor: pointer;
 }
 
-a {
+.nav-link {
     text-decoration: none;
     color: black;
     font-size: 1.25rem;
@@ -191,6 +206,10 @@ h2 {
         margin-left: 2rem;
         width: 150px;
     }
+
+    .code-banner-info h1 {
+      font-size: 30px;
+    }
 }
 
 @media(max-width: 66rem) {
@@ -222,7 +241,7 @@ h2 {
         background-size: cover;
         width: 2rem;
         aspect-ratio: 1;
-        top: 4rem;
+        top: 12rem;
         right: 2rem;
         border: none;
         background-color: transparent;
