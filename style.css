@@ -100,6 +100,7 @@ h2 {
     margin-left: 95px;
 }
 
+
 .primary-navigation {
     display: flex;
     gap: 2rem;
@@ -290,6 +291,102 @@ h2 {
 
 /* +++++++++++++++++++++    side by side sections     +++++++++++++++++++++++++ */
 
+
+
+.to-do-sections {
+  /* margin-top: 25px; */
+  padding: 50px;
+  gap: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.to-do-sections-content {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.things-to-do-img {
+  flex: 1 1 300px;
+  max-width: 500px;
+  height: auto;
+  box-shadow: 10px 10px #362714;
+  margin-top: 2rem;
+}
+
+/* Grid for the two-column list */
+.things-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.things-grid ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.things-grid li {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .to-do-sections {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .things-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .things-to-do-img {
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+
+  .things-grid li {
+    font-size: 1rem;
+  }
+}
+
+#things-to-do-section {
+  background-image: url('images/beautiful-pathway-through-woods.jpg'); /* replace with your actual image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#things-to-do-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* or try rgba(0,0,0,0.3) for darker overlays */
+  z-index: 0;
+}
+
+.to-do-sections-content,
+.things-to-do-img {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+
 strong {
   color: #2b7878;
 }
@@ -315,15 +412,11 @@ strong {
   
 }
 
-.about-sections img {
+.about-section-img {
     margin-right: 4em;
     max-width: 20em;
     max-height: 25em;
     box-shadow: 10px 10px #362714;
-}
-
-.about-our-ads {
-    flex-wrap: wrap-reverse;
 }
 
 
@@ -352,6 +445,64 @@ strong {
     margin: 15px;
   }
 }
+
+
+
+
+/* ****************************** Image Gallery ************************ */
+
+.gallery-section {
+  padding: 4rem 2rem;
+  background-color: #f1f8f8;
+  margin-top: 50px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 1rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Specific sizing to create a collage effect */
+.gallery-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-item.tall {
+  grid-row: span 2;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+  }
+
+  .gallery-item.large,
+  .gallery-item.tall {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
 
 
 /*  +++++++++++++++  Contact Form  +++++++++++ */
@@ -597,7 +748,7 @@ textarea {
 
 /* +++++++++++++++++ pop up ++++++++++++++++++ */
 
-  .modal {
+  /* .modal {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -616,7 +767,6 @@ textarea {
     margin: 15% auto;
     padding: 20px;
     border-radius: 8px;
-    /* width: 300px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 2.9s;
 }
@@ -697,7 +847,7 @@ textarea {
 }
 
 .modal.show {
-  display: block; /* Make the modal visible */
+  display: block;
   animation: fadeIn 0.3s ease-out;
 }
 
@@ -708,9 +858,9 @@ textarea {
   border-radius: 8px;
   width: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(0.8); /* Start scaled down */
-  opacity: 0; /* Start invisible */
-  animation: popIn 0.5s ease-out forwards; /* Pop in animation */
+  transform: scale(0.8);
+  opacity: 0;
+  animation: popIn 0.5s ease-out forwards;
 }
 
 @keyframes fadeIn {
@@ -744,5 +894,5 @@ textarea {
     width: 300px;
   }
 }
-
+ */
 
