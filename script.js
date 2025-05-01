@@ -254,3 +254,95 @@ document.addEventListener('DOMContentLoaded', function() {
     updateGuestsText();
     updateCounterButtons();
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Tab functionality
+    const tabButtons = document.querySelectorAll(".tab-btn")
+    const tabContents = document.querySelectorAll(".tab-content")
+  
+    function setActiveTab(tabId) {
+      // Hide all tab contents
+      tabContents.forEach((content) => {
+        content.classList.remove("active")
+      })
+  
+      // Remove active class from all tab buttons
+      tabButtons.forEach((button) => {
+        button.classList.remove("active")
+      })
+  
+      // Show the selected tab content
+      document.getElementById(tabId).classList.add("active")
+  
+      // Add active class to the clicked tab button
+      document.querySelector(`[data-tab="${tabId}"]`).classList.add("active")
+    }
+  
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const tabId = this.getAttribute("data-tab")
+        setActiveTab(tabId)
+      })
+    })
+  
+    // Switch to host tab link
+    const switchToHostLink = document.getElementById("switch-to-host")
+    if (switchToHostLink) {
+      switchToHostLink.addEventListener("click", (e) => {
+        e.preventDefault()
+        setActiveTab("host-retreat")
+      })
+    }
+  
+    // Accordion functionality for retreat details
+    const detailsButtons = document.querySelectorAll(".details-btn")
+  
+    // Enhance the accordion functionality with better scrolling behavior
+    detailsButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        // Toggle active class on the button
+        this.classList.toggle("active")
+  
+        // Find the parent retreat card
+        const retreatCard = this.closest(".retreat-card")
+  
+        // Find the details section within this card
+        const detailsSection = retreatCard.querySelector(".retreat-details")
+  
+        // Toggle the active class on the details section
+        detailsSection.classList.toggle("active")
+  
+        // Smooth scroll to show expanded content if it's now active
+        if (detailsSection.classList.contains("active")) {
+          // Add a slight delay to allow the animation to start
+          setTimeout(() => {
+            // Calculate position to scroll to (top of card + some offset)
+            const cardTop = retreatCard.getBoundingClientRect().top + window.pageYOffset
+            const scrollPosition = cardTop - 20 // 20px offset from top
+  
+            window.scrollTo({
+              top: scrollPosition,
+              behavior: "smooth",
+            })
+          }, 100)
+        }
+      })
+    })
+  })
+  
+  
