@@ -1639,10 +1639,12 @@ img {
   margin-bottom: 0.25rem;
 }
 
+/* Charlotte added the display: none line in order to hide the sticky footer */
 .host-prompt {
   text-align: center;
   margin-top: 2rem;
   font-style: italic;
+  display: none !important;
 }
 
 /* Host a Retreat Tab */
